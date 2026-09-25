@@ -1,0 +1,44 @@
+{
+  "rel_next-single": {
+    "name": "",
+    "title": "",
+    "description": "",
+    "keywords": "",
+    "favicon": "",
+    "cover": {
+      "title": "",
+      "file": ""
+    },
+    "background": {
+      "file": ""
+    },
+    "share_image": "",
+    "links": [
+      {
+        "label": "Platform",
+        "url": "#",
+        "icon": "youtube"
+      },
+      {
+        "label": "Platform",
+        "url": "#",
+        "icon": "rumble"
+      },
+      {
+        "label": "Platform",
+        "url": "#",
+        "icon": "applemusic"
+      },
+      {
+        "label": "Platform",
+        "url": "#",
+        "icon": "spotify"
+      },
+      {
+        "label": "Platform",
+        "url": "#",
+        "icon": "bandcamp"
+      }
+    ]
+  }
+}
