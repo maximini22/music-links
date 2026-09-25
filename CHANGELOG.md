@@ -7,3 +7,7 @@
 2026-09-25  most-toxic-bitcoin-maxi  new page from carrd html+assets  25bcd70
 2026-09-25  punching-bag  new page from carrd html+assets  25bcd70
 2026-09-25  rich-in-bitcoin  new page from carrd html+assets  25bcd70
+2026-09-26  rich-in-bitcoin  cover resize fix (even-square+picture CSS)
+2026-09-26  most-toxic-bitcoin-maxi  cover resize fix (even-square+picture CSS)
+2026-09-26  lady-with-a-house-cat  cover resize fix (even-square+picture CSS)
+2026-09-26  going-cashless  cover resize fix (even-square+picture CSS)
