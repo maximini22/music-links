@@ -1,0 +1,47 @@
+{
+  "rel_most-toxic-bitcoin-maxi": {
+    "name": "Most Toxic Bitcoin Maxi",
+    "title": "Most Toxic Bitcoin Maxi - ROBBIE P",
+    "description": "Stream Most Toxic Bitcoin Maxi by ROBBIE P now on Spotify, Apple Music, Youtube and more.",
+    "keywords": "Most Toxic Bitcoin Maxi, Robbie P, Rap, Alternative Hip-Hop, Bitcoin Rap, Bitcoin Song, Bitcoin Music",
+    "favicon": "",
+    "cover": {
+      "title": "Most Toxic Bitcoin Maxi - ROBBIE P",
+      "file": "assets/images/image01.desktop.76dcf74d.avif",
+      "file_mobile": "assets/images/image01.mobile.bfe9e8b9.avif",
+      "alt": "Most Toxic Bitcoin Maxi by ROBBIE P \u2014 official single cover"
+    },
+    "background": {
+      "file": "assets/images/bg.desktop.e61f5083.avif",
+      "file_mobile": "assets/images/bg.mobile.be0a0715.avif"
+    },
+    "share_image": "assets/images/share.f7d433b1.avif",
+    "links": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/album/1c2ryByeDD5SEiqfdGcA7n",
+        "icon": "spotify"
+      },
+      {
+        "label": "Youtube Music",
+        "url": "https://music.youtube.com/watch?v=OBCMr6pk3LE",
+        "icon": "youtube"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/us/album/most-toxic-bitcoin-maxi-single/1864561874",
+        "icon": "applemusic"
+      },
+      {
+        "label": "Amazon Music",
+        "url": "https://music.amazon.com.au/albums/B0GCTG5JQP",
+        "icon": "amazonmusic"
+      },
+      {
+        "label": "Bandcamp",
+        "url": "https://robbiep808x.bandcamp.com/album/most-toxic-bitcoin-maxi",
+        "icon": "bandcamp"
+      }
+    ]
+  }
+}

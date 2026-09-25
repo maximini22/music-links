@@ -1,0 +1,47 @@
+{
+  "rel_if-it-wasnt-for-satoshi": {
+    "name": "If It Wasn't For Satoshi",
+    "title": "If It Wasn't For Satoshi - ROBBIE P",
+    "description": "Stream If It Wasn't For Satoshi by ROBBIE P now on Spotify, Apple Music, Youtube and more.",
+    "keywords": "If It Wasn't For Satoshi, Robbie P, Rap, Alternative New Wave, Hip-Hop/Rap, Bitcoin Music, Bitcoin Song, Bitcoin Rap",
+    "favicon": "",
+    "cover": {
+      "title": "If It Wasn't For Satoshi - ROBBIE P",
+      "file": "assets/images/image01.desktop.00755d4f.avif",
+      "file_mobile": "assets/images/image01.mobile.1a2b9a25.avif",
+      "alt": "If It Wasn't For Satoshi by ROBBIE P \u2014 official single cover"
+    },
+    "background": {
+      "file": "assets/images/bg.desktop.9acdb4b8.avif",
+      "file_mobile": "assets/images/bg.mobile.e426354f.avif"
+    },
+    "share_image": "assets/images/share.d118e8d4.avif",
+    "links": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/album/01mIow264j4s7H4sNDfPPr",
+        "icon": "spotify"
+      },
+      {
+        "label": "Youtube Music",
+        "url": "https://music.youtube.com/watch?v=IrcN-zmCZMI",
+        "icon": "youtube"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/us/album/if-it-wasnt-for-satoshi-single/1859943609",
+        "icon": "applemusic"
+      },
+      {
+        "label": "Amazon Music",
+        "url": "https://music.amazon.com.au/albums/B0G5Z6FM9G",
+        "icon": "amazonmusic"
+      },
+      {
+        "label": "Bandcamp",
+        "url": "https://robbiep808x.bandcamp.com/album/if-it-wasnt-for-satoshi",
+        "icon": "bandcamp"
+      }
+    ]
+  }
+}

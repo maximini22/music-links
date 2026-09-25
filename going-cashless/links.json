@@ -1,0 +1,47 @@
+{
+  "rel_going-cashless": {
+    "name": "Going Cashless",
+    "title": "Going Cashless - ROBBIE P",
+    "description": "Stream Going Cashless by ROBBIE P now on Spotify, Apple Music, Youtube and more.",
+    "keywords": "Going Cashless, Robbie P, Rap, Hip-Hop/Rap, Bars",
+    "favicon": "",
+    "cover": {
+      "title": "Going Cashless - ROBBIE P",
+      "file": "assets/images/image01.desktop.b7b18537.avif",
+      "file_mobile": "assets/images/image01.mobile.24e38e73.avif",
+      "alt": "Going Cashless by ROBBIE P \u2014 official single cover"
+    },
+    "background": {
+      "file": "assets/images/bg.desktop.08ac2efb.avif",
+      "file_mobile": "assets/images/bg.mobile.8b70a23c.avif"
+    },
+    "share_image": "assets/images/share.0bb017ab.avif",
+    "links": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/album/6nVuN2j7bOkY0Z8T6lonmF?si=BrNVdqlfTg2vjJbv8K_27w",
+        "icon": "spotify"
+      },
+      {
+        "label": "Youtube Music",
+        "url": "https://music.youtube.com/watch?v=NALgMW0nOBQ",
+        "icon": "youtube"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/us/album/going-cashless-single/1860013552",
+        "icon": "applemusic"
+      },
+      {
+        "label": "Amazon Music",
+        "url": "https://music.amazon.com.au/albums/B0G61G5SQG",
+        "icon": "amazonmusic"
+      },
+      {
+        "label": "Bandcamp",
+        "url": "https://robbiep808x.bandcamp.com/album/going-cashless",
+        "icon": "bandcamp"
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "rel_punching-bag": {
+    "name": "Punching Bag",
+    "title": "Punching Bag - ROBBIE P",
+    "description": "Stream Punching Bag by ROBBIE P now on Spotify, Apple Music, Youtube and more.",
+    "keywords": "Punching Bag, Robbie P, Rap, Alternative New Wave, Hip-Hop/Rap, Indie",
+    "favicon": "",
+    "cover": {
+      "title": "Punching Bag - ROBBIE P",
+      "file": "assets/images/image01.desktop.b6f842d2.avif",
+      "file_mobile": "assets/images/image01.mobile.92d5c2f6.avif",
+      "alt": "Punching Bag by ROBBIE P \u2014 official single cover"
+    },
+    "background": {
+      "file": "assets/images/bg.desktop.8be3b7bb.avif",
+      "file_mobile": "assets/images/bg.mobile.a617f9e1.avif"
+    },
+    "share_image": "assets/images/share.7be3c2ad.avif",
+    "links": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/album/1j9l7DPWC7fXk3SoTtDPKB?si=1ConkJG8Qd-iq2w_nJDEPQ",
+        "icon": "spotify"
+      },
+      {
+        "label": "Youtube Music",
+        "url": "https://music.youtube.com/watch?v=tRDPS7mA-zY",
+        "icon": "youtube"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/us/album/punching-bag-single/1859949465",
+        "icon": "applemusic"
+      },
+      {
+        "label": "Amazon Music",
+        "url": "https://music.amazon.com.au/albums/B0G5ZGT6FY",
+        "icon": "amazonmusic"
+      },
+      {
+        "label": "Bandcamp",
+        "url": "https://robbiep808x.bandcamp.com/album/punching-bag-2",
+        "icon": "bandcamp"
+      }
+    ]
+  }
+}

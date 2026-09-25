@@ -1,0 +1,47 @@
+{
+  "rel_rich-in-bitcoin": {
+    "name": "Rich in Bitcoin",
+    "title": "Rich in Bitcoin - ROBBIE P ft. Man Like Kweks",
+    "description": "Stream Rich in Bitcoin by ROBBIE P now on Spotify, Apple Music, Youtube and more.",
+    "keywords": "Rich In Bitcoin, Robbie P, Man Like Kweks, Bitcoin Rap, Bitcoin Music, Bitcoin Song, Hip-Hop/Rap",
+    "favicon": "",
+    "cover": {
+      "title": "Rich in Bitcoin - ROBBIE P ft. Man Like Kweks",
+      "file": "assets/images/image01.desktop.e689c3d6.avif",
+      "file_mobile": "assets/images/image01.mobile.f1d4abb2.avif",
+      "alt": "Rich in Bitcoin by ROBBIE P \u2014 official single cover"
+    },
+    "background": {
+      "file": "assets/images/bg.desktop.bee4af44.avif",
+      "file_mobile": "assets/images/bg.mobile.f3f6b959.avif"
+    },
+    "share_image": "assets/images/share.5f68e3ec.avif",
+    "links": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/album/75agGmMJAm07kWoCIG4H14?si=m41j-JXhSzOeDsbnGU5tgA",
+        "icon": "spotify"
+      },
+      {
+        "label": "Youtube Music",
+        "url": "https://music.youtube.com/watch?v=DXTv-zu2uNE",
+        "icon": "youtube"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/us/album/rich-in-bitcoin-feat-man-like-kweks-single/1864897866",
+        "icon": "applemusic"
+      },
+      {
+        "label": "Amazon Music",
+        "url": "https://music.amazon.com.au/albums/B0GD1LVCBR",
+        "icon": "amazonmusic"
+      },
+      {
+        "label": "Deezer",
+        "url": "https://www.deezer.com/us/album/886966562",
+        "icon": "deezer"
+      }
+    ]
+  }
+}

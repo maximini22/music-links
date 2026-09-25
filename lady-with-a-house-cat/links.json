@@ -1,0 +1,47 @@
+{
+  "rel_lady-with-a-house-cat": {
+    "name": "Lady With a House Cat",
+    "title": "Lady With a House Cat - ROBBIE P",
+    "description": "Stream Lady With a House Cat by ROBBIE P now on Spotify, Apple Music, Youtube and more.",
+    "keywords": "Lady With a House Cat, Robbie P, Rap, Alternative New Wave, Indie Rock, Pop Punk",
+    "favicon": "",
+    "cover": {
+      "title": "Lady With a House Cat - ROBBIE P",
+      "file": "assets/images/image01.desktop.62da1cd4.avif",
+      "file_mobile": "assets/images/image01.mobile.c37dee8c.avif",
+      "alt": "Lady With a House Cat by ROBBIE P \u2014 official single cover"
+    },
+    "background": {
+      "file": "assets/images/bg.desktop.2d744326.avif",
+      "file_mobile": "assets/images/bg.mobile.ad4a893b.avif"
+    },
+    "share_image": "assets/images/share.6b2d4c6e.avif",
+    "links": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/album/78tPhUrhrnQFlpEhHXZGt8?si=UXPmMCYFQ5C0M5jK259qYQ",
+        "icon": "spotify"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/us/album/lady-with-a-house-cat-single/1864486727",
+        "icon": "applemusic"
+      },
+      {
+        "label": "Youtube Music",
+        "url": "https://music.youtube.com/watch?v=58LlBP96FXg",
+        "icon": "youtube"
+      },
+      {
+        "label": "Amazon Music",
+        "url": "https://music.amazon.com.au/albums/B0GCQ6YL1S",
+        "icon": "amazonmusic"
+      },
+      {
+        "label": "Bandcamp",
+        "url": "https://robbiep808x.bandcamp.com/track/lady-with-a-house-cat-2",
+        "icon": "bandcamp"
+      }
+    ]
+  }
+}
