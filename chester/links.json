@@ -12,6 +12,7 @@
     "background": {
       "file": "assets/images/bg.jpeg"
     },
+    "share_image": "assets/images/bg.jpg",
     "links": [
       {
         "label": "Music Video (YouTube)",

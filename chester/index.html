@@ -1077,6 +1077,12 @@
       setMeta('meta[property="og:description"]', "content", song.description);
       setMeta('meta[property="og:site_name"]', "content", song.title);
 
+      // Share/social preview: plain file path from JSON (no CSS/filters).
+      if (song.share_image) {
+        setMeta('meta[property="og:image"]', "content", song.share_image);
+        setMeta('meta[property="twitter:image"]', "content", song.share_image);
+      }
+
 var cover = document.querySelector("#image01 img");
 if (cover && song.cover) {
   // Keep deferred data-src in sync so Carrd never reloads the old HTTrack filename.
