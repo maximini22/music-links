@@ -1,0 +1,42 @@
+{
+  "rel_chester": {
+    "title": "Chester - ROBBIE P",
+    "description": "Stream Chester by ROBBIE P now on Spotify, Bandcamp, Youtube and more.",
+    "keywords": "Chester, Robbie P, Rap, Alternative Hip Hop, Trap",
+    "favicon": "",
+    "cover": {
+      "title": "Chester - ROBBIE P",
+      "file": "assets/image01.jpg"
+    },
+    "background": {
+      "file": "assets/bg.jpg"
+    },
+    "links": [
+      {
+        "label": "Music Video (YouTube)",
+        "url": "https://youtu.be/LjtBeYAyRPg",
+        "icon": "youtube"
+      },
+      {
+        "label": "Music Video (Rumble)",
+        "url": "https://rumble.com/v7eodqc-robbie-p-chester-official-music-video.html?e9s=src_v1_s%2Csrc_v1_s_o&sci=12c4861b-6e3e-43c3-bdc2-5b715bff07aa",
+        "icon": "rumble"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/us/song/chester/6805501108",
+        "icon": "applemusic"
+      },
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/album/6GvYreCnXUfLJ7DcT0E2Pj?si=78WneB3EQ1OZDtW679eqPg&utm_source=copy-link",
+        "icon": "spotify"
+      },
+      {
+        "label": "Bandcamp",
+        "url": "https://robbiep808x.bandcamp.com/album/chester",
+        "icon": "bandcamp"
+      }
+    ]
+  }
+}
