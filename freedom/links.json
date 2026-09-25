@@ -1,0 +1,44 @@
+{
+  "rel_freedom": {
+    "name": "Freedom",
+    "title": "",
+    "description": "",
+    "keywords": "",
+    "favicon": "",
+    "cover": {
+      "title": "",
+      "file": ""
+    },
+    "background": {
+      "file": ""
+    },
+    "share_image": "",
+    "links": [
+      {
+        "label": "Platform",
+        "url": "#",
+        "icon": "applemusic"
+      },
+      {
+        "label": "Platform",
+        "url": "#",
+        "icon": "applemusic"
+      },
+      {
+        "label": "Platform",
+        "url": "#",
+        "icon": "applemusic"
+      },
+      {
+        "label": "Platform",
+        "url": "#",
+        "icon": "applemusic"
+      },
+      {
+        "label": "Platform",
+        "url": "#",
+        "icon": "applemusic"
+      }
+    ]
+  }
+}
