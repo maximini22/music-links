@@ -592,11 +592,15 @@
 
         .image-component.style-4>.frame {
             width: 100vw;
+            max-width: 100%;
+            aspect-ratio: 1 / 1;
             border-radius: 1.25rem;
             border-color: transparent;
             border-style: solid;
             border-width: 1px;
             transition: none;
+            overflow: hidden;
+            position: relative;
         }
 
         .image-component.style-4>.frame>img:first-child {
@@ -863,6 +867,8 @@
 
             .image-component.style-4>.frame {
                 width: 100vw;
+                max-width: 100%;
+                aspect-ratio: 1 / 1;
             }
 
             .image-component.style-6>.frame {

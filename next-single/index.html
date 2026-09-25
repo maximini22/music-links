@@ -591,8 +591,8 @@
         }
 
         .image-component.style-4>.frame {
-            /* Template cover slot: same 1:1 rounded square as a filled song page */
-            width: 100%;
+            /* Cover frame: same as live Chester — 100vw, 1:1 square, 1.25rem corners (not circular) */
+            width: 100vw;
             max-width: 100%;
             aspect-ratio: 1 / 1;
             border-radius: 1.25rem;
@@ -601,7 +601,34 @@
             border-width: 1px;
             transition: none;
             overflow: hidden;
+            position: relative;
             background-color: #221c15;
+        }
+
+        .image-component.style-4>.frame>.cover-fill-hint {
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.4rem;
+            padding: 1.25rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.55);
+            font-size: 0.85rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            line-height: 1.45;
+            pointer-events: none;
+        }
+
+        .image-component.style-4>.frame>.cover-fill-hint strong {
+            color: rgba(255, 255, 255, 0.88);
+            font-weight: 600;
+            letter-spacing: 0.16em;
+            font-size: 1.05rem;
         }
 
         .image-component.style-4>.frame>img:first-child {
@@ -871,7 +898,7 @@
             }
 
             .image-component.style-4>.frame {
-                width: 100%;
+                width: 100vw;
                 max-width: 100%;
                 aspect-ratio: 1 / 1;
             }
@@ -1015,11 +1042,11 @@
     <div class="site-wrapper">
         <div class="site-main" role="main">
             <div class="inner">
-                <div id="image01" class="image-component instance-1 style-4"><span class="frame"><img
+                <div id="image01" class="image-component instance-1 style-4"><span class="frame deferred"><img
                             src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxODYwIDE4NjAiIHdpZHRoPSIxODYwIiBoZWlnaHQ9IjE4NjAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyZWN0IGZpbGw9IiMyMjFjMTUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D"
-                            data-src=""
-                            alt="Cover art" title=""
-                            oncontextmenu="return false;" ondragstart="return false;" /></span></div>
+                            data-src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxODYwIDE4NjAiIHdpZHRoPSIxODYwIiBoZWlnaHQ9IjE4NjAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyZWN0IGZpbGw9IiMyMjFjMTUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D"
+                            alt="Cover art — fill in cover.file" title=""
+                            oncontextmenu="return false;" ondragstart="return false;" /><span class="cover-fill-hint">Cover art<br><strong>fill in</strong><br>cover.file in links.json</span></span></div>
                 <div id="image02" class="image-component instance-2 style-6"><span class="frame"><img
                             src="../assets/branding/robbie-p-logo-white.png" alt="ROBBIE P Logo" title="ROBBIE P"
                             oncontextmenu="return false;" ondragstart="return false;" /></span></div>
@@ -1096,11 +1123,13 @@
       }
 
 var cover = document.querySelector("#image01 img");
+var hint = document.querySelector("#image01 .cover-fill-hint");
 if (cover && song.cover && song.cover.file) {
-  // Only swap when a real cover path is set (empty template keeps the 1:1 placeholder).
+  // Real cover path: swap in art and drop the fill-in hint.
   cover.dataset.src = song.cover.file;
   cover.src = song.cover.file;
   cover.title = song.cover.title || song.title;
+  if (hint) hint.remove();
 }
 
 if (song.background && song.background.file) {
