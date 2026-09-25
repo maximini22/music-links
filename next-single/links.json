@@ -17,12 +17,7 @@
       {
         "label": "Platform",
         "url": "#",
-        "icon": "youtube"
-      },
-      {
-        "label": "Platform",
-        "url": "#",
-        "icon": "rumble"
+        "icon": "applemusic"
       },
       {
         "label": "Platform",
@@ -32,12 +27,17 @@
       {
         "label": "Platform",
         "url": "#",
-        "icon": "spotify"
+        "icon": "applemusic"
       },
       {
         "label": "Platform",
         "url": "#",
-        "icon": "bandcamp"
+        "icon": "applemusic"
+      },
+      {
+        "label": "Platform",
+        "url": "#",
+        "icon": "applemusic"
       }
     ]
   }
