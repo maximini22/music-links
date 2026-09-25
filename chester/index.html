@@ -280,10 +280,11 @@
             transform: scale(1);
             width: 100vw;
             z-index: 0;
-            background-image: var(--page-bg);
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            /* Photo + apex-matched dark wash (~35%). Gradient paints above the image. */
+            background-image: linear-gradient(360deg, rgba(35, 33, 41, 0.40) 0%, rgba(29, 27, 36, 0.32) 100%), var(--page-bg);
+            background-size: auto, cover;
+            background-position: center, center;
+            background-repeat: no-repeat, no-repeat;
         }
 
         /* Film grain must be DOM SVG — CSS background-image drops feTurbulence filters. */
