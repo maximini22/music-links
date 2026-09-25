@@ -280,10 +280,22 @@
             transform: scale(1);
             width: 100vw;
             z-index: 0;
-            background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22256%22%20height%3D%22256%22%3E%3Cfilter%20id%3D%22n%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.85%22%20numOctaves%3D%224%22%20stitchTiles%3D%22stitch%22/%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%201%200%200%200%200%201%200%200%200%200%201%200%200%200%200.35%200%22/%3E%3C/filter%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20filter%3D%22url%28%23n%29%22/%3E%3C/svg%3E"), var(--page-bg);
-            background-size: 180px, cover;
-            background-position: center, center;
-            background-repeat: repeat, no-repeat;
+            background-image: var(--page-bg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Film grain must be DOM SVG — CSS background-image drops feTurbulence filters. */
+        .page-grain {
+            position: fixed;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0.5;
+            mix-blend-mode: soft-light;
         }
 
         body::after {
@@ -954,7 +966,15 @@
     </noscript>
 </head>
 
-<body class="is-loading"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+<body class="is-loading">
+    <svg class="page-grain" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none">
+        <filter id="page-grain-filter" x="0%" y="0%" width="100%" height="100%">
+            <feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="3" stitchTiles="stitch" result="noise"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.55 0" in="noise"/>
+        </filter>
+        <rect width="100%" height="100%" filter="url(#page-grain-filter)"/>
+    </svg>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40 40" display="none" width="0" height="0">
         <symbol id="icon-e2a43bdcfd2e22a246a1598df579c4ad" viewBox="0 0 40 40">
             <path
