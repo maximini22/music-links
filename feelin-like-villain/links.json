@@ -1,0 +1,47 @@
+{
+  "rel_feelin-like-villain": {
+    "name": "Feelin' Like a Villain",
+    "title": "Feelin' Like a Villain ft. Snoop Dogg - ROBBIE P",
+    "description": "Stream Feelin' Like a Villain ft. Snoop Dogg by ROBBIE P now on Spotify, Apple Music, Youtube and more.",
+    "keywords": "Feelin Like a Villain, Robbie P, Rap, Snoop Dogg, Hip-Hop/Rap, NFT, Crypto Music, Crypto Song, Death Row Records",
+    "favicon": "",
+    "cover": {
+      "title": "Feelin' Like a Villain ft. Snoop Dogg - ROBBIE P",
+      "file": "assets/images/image01.desktop.6f5f087d.avif",
+      "file_mobile": "assets/images/image01.mobile.36ff4fcc.avif",
+      "alt": "Feelin' Like a Villain by ROBBIE P \u2014 official single cover"
+    },
+    "background": {
+      "file": "assets/images/bg.desktop.6eddf022.avif",
+      "file_mobile": "assets/images/bg.mobile.b2109ef9.avif"
+    },
+    "share_image": "assets/images/share.69a0b460.avif",
+    "links": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/album/1J4gpMuMVHnBoFE5jLjorQ?si=RUGUgOXESGyqb8wApYM3sA",
+        "icon": "spotify"
+      },
+      {
+        "label": "Youtube Music",
+        "url": "https://www.youtube.com/watch?v=urq8iJaaXQc&list=OLAK5uy_k97iFFKOaUc_k45LPPFNxLz7I4YxMyjXk",
+        "icon": "youtube"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/us/album/feelin-like-a-villian-single/1870217357",
+        "icon": "applemusic"
+      },
+      {
+        "label": "Amazon Music",
+        "url": "https://music.amazon.com.au/albums/B0GHN9KL3F",
+        "icon": "amazonmusic"
+      },
+      {
+        "label": "Bandcamp",
+        "url": "https://robbiep808x.bandcamp.com/album/feelin-like-a-villian",
+        "icon": "bandcamp"
+      }
+    ]
+  }
+}
