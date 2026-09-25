@@ -1,9 +1,13 @@
 {
   "rel_chester": {
+    "name": "CHESTER",
     "title": "Chester - ROBBIE P",
     "description": "Stream Chester by ROBBIE P now on Spotify, Bandcamp, Youtube and more.",
     "keywords": "Chester, Robbie P, Rap, Alternative Hip Hop, Trap",
     "favicon": "",
+    "background": {
+    "file": "assets/images/bg.jpg"
+    }
     "cover": {
       "title": "Chester - ROBBIE P",
       "file": "assets/images/image01.jpg"
