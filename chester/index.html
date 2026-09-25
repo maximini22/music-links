@@ -280,10 +280,10 @@
             transform: scale(1);
             width: 100vw;
             z-index: 0;
-            background-image: var(--page-bg);
-            background-size: 512px, cover, cover;
-            background-position: center, 0% 0%, center;
-            background-repeat: repeat, repeat, no-repeat;
+            background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22256%22%20height%3D%22256%22%3E%3Cfilter%20id%3D%22n%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.85%22%20numOctaves%3D%224%22%20stitchTiles%3D%22stitch%22/%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%201%200%200%200%200%201%200%200%200%200%201%200%200%200%200.35%200%22/%3E%3C/filter%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20filter%3D%22url%28%23n%29%22/%3E%3C/svg%3E"), var(--page-bg);
+            background-size: 180px, cover;
+            background-position: center, center;
+            background-repeat: repeat, no-repeat;
         }
 
         body::after {
@@ -309,7 +309,7 @@
 
         :root {
             --background-height: 100vh;
-            --page-bg: url("assets/images/bg.jpg");
+            --page-bg: url("assets/images/bg.jpeg");
             --site-language-alignment: left;
             --site-language-direction: ltr;
             --site-language-flex-alignment: flex-start;
@@ -990,7 +990,7 @@
                 <div id="image02" class="image-component instance-2 style-6"><span class="frame"><img
                             src="assets/images/image02381f.png?v=aeaba7d4" alt="ROBBIE P Logo" title="ROBBIE P"
                             oncontextmenu="return false;" ondragstart="return false;" /></span></div>
-                <h2 id="text45" class="text-component instance-45 style-5"><strong>CHESTER</strong></h2>
+                <h2 id="text45" class="text-component instance-45 style-5"><strong>Song</strong></h2>
                 <p id="text01" class="text-component instance-1 style-6">Listen now</p>
                 <ul id="buttons01" class="buttons-component instance-1 style-3">
                     <li><a href="#" class="n01" role="button"><svg aria-labelledby="buttons01-icon-1-title">
@@ -1071,7 +1071,7 @@ if (song.background && song.background.file) {
 
 var heading = document.querySelector("#text45 strong");
 if (heading) {
-  heading.textContent = song.name || song.title;
+  heading.textContent = song.name || "Song";
 }
         
       var list = document.getElementById("buttons01");
