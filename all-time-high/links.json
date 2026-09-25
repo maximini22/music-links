@@ -1,0 +1,47 @@
+{
+  "rel_all-time-high": {
+    "name": "All Time High, Lessons of Regret",
+    "title": "All Time High, Lessons of Regret - ROBBIE P",
+    "description": "Stream All Time High, Lessons of Regret by ROBBIE P now on Spotify, Apple Music, Youtube and more.",
+    "keywords": "All Time High Lessons of Regret, Robbie P, Rap, Crypto Song, Hip-Hop/Rap, Alternative New Wave, Indie",
+    "favicon": "",
+    "cover": {
+      "title": "All Time High, Lessons of Regret - ROBBIE P",
+      "file": "assets/images/image01.desktop.1a25710d.avif",
+      "file_mobile": "assets/images/image01.mobile.130ee2ce.avif",
+      "alt": "All Time High, Lessons of Regret by ROBBIE P — official single cover"
+    },
+    "background": {
+      "file": "assets/images/bg.desktop.9acdb4b8.avif",
+      "file_mobile": "assets/images/bg.mobile.e426354f.avif"
+    },
+    "share_image": "assets/images/share.ca1671a9.avif",
+    "links": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/track/0lAi8uFPXmb3kD5yIHoNX3",
+        "icon": "spotify"
+      },
+      {
+        "label": "Youtube Music",
+        "url": "https://www.youtube.com/watch?v=SAJMiDIdRP4",
+        "icon": "youtube"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/us/album/all-the-time-high-lessons-of-regret-single/1859937320",
+        "icon": "applemusic"
+      },
+      {
+        "label": "Amazon Music",
+        "url": "https://music.amazon.com.au/albums/B0G5YRWB8W",
+        "icon": "amazonmusic"
+      },
+      {
+        "label": "Bandcamp",
+        "url": "https://robbiep808x.bandcamp.com/track/all-time-high-lessons-of-regret",
+        "icon": "bandcamp"
+      }
+    ]
+  }
+}
