@@ -280,8 +280,8 @@
             transform: scale(1);
             width: 100vw;
             z-index: 0;
-            /* Photo + apex-matched dark wash (~35%). Gradient paints above the image. */
-            background-image: linear-gradient(360deg, rgba(35, 33, 41, 0.40) 0%, rgba(29, 27, 36, 0.32) 100%), var(--page-bg);
+            /* Photo + apex-matched dark wash (~56%). Gradient paints above the image. */
+            background-image: linear-gradient(360deg, rgba(35, 33, 41, 0.60) 0%, rgba(29, 27, 36, 0.52) 100%), var(--page-bg);
             background-size: auto, cover;
             background-position: center, center;
             background-repeat: no-repeat, no-repeat;
@@ -1005,7 +1005,7 @@
             <div class="inner">
                 <div id="image01" class="image-component instance-1 style-4"><span class="frame deferred"><img
                             src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxODYwIDE4NjAiIHdpZHRoPSIxODYwIiBoZWlnaHQ9IjE4NjAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyZWN0IGZpbGw9IiMyMjFjMTUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D"
-                            data-src="assets/images/image01381f.jpg?v=aeaba7d4"
+                            data-src="assets/images/image01.jpg"
                             alt="Chester by ROBBIE P - Official Single Cover" title="Chester- ROBBIE P"
                             oncontextmenu="return false;" ondragstart="return false;" /></span></div>
                 <div id="image02" class="image-component instance-2 style-6"><span class="frame"><img
@@ -1079,6 +1079,8 @@
 
 var cover = document.querySelector("#image01 img");
 if (cover && song.cover) {
+  // Keep deferred data-src in sync so Carrd never reloads the old HTTrack filename.
+  cover.dataset.src = song.cover.file;
   cover.src = song.cover.file;
   cover.title = song.cover.title || song.title;
 }
