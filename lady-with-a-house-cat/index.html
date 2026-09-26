@@ -323,7 +323,8 @@
 
         :root {
             --background-height: 100vh;
-            --page-bg: url("assets/images/bg.desktop.2d744326.avif");
+            --page-bg: url("assets/images/bg.desktop.9fe6f409.avif");
+            --page-bg-mobile: url("assets/images/bg.mobile.9fe6f409.avif");
             --site-language-alignment: left;
             --site-language-direction: ltr;
             --site-language-flex-alignment: flex-start;
@@ -880,6 +881,9 @@
         }
 
         @media (max-width: 736px) {
+            body::before {
+                background-image: linear-gradient(360deg, rgba(35, 33, 41, 0.60) 0%, rgba(29, 27, 36, 0.52) 100%), var(--page-bg-mobile);
+            }
             html {
                 font-size: 9pt;
             }
@@ -1143,6 +1147,11 @@ if (song.background && song.background.file) {
   document.documentElement.style.setProperty(
     "--page-bg",
     "url('" + song.background.file + "')"
+  );
+  var mobileBg = song.background.file_mobile || song.background.file;
+  document.documentElement.style.setProperty(
+    "--page-bg-mobile",
+    "url('" + mobileBg + "')"
   );
 }
 

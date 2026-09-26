@@ -7,10 +7,13 @@
     "favicon": "",
     "cover": {
       "title": "",
-      "file": ""
+      "file": "",
+      "file_mobile": "",
+      "alt": ""
     },
     "background": {
-      "file": ""
+      "file": "",
+      "file_mobile": ""
     },
     "share_image": "",
     "links": [

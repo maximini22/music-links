@@ -11,3 +11,4 @@
 2026-09-26  most-toxic-bitcoin-maxi  cover resize fix (even-square+picture CSS)
 2026-09-26  lady-with-a-house-cat  cover resize fix (even-square+picture CSS)
 2026-09-26  going-cashless  cover resize fix (even-square+picture CSS)
+2026-09-26  8 singles (+ next-single)  BG aspect-preserve regen (no 8:3 crop) + page-bg-mobile  c7d7775

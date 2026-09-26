@@ -323,7 +323,8 @@
 
         :root {
             --background-height: 100vh;
-            --page-bg: url("assets/images/bg.desktop.6eddf022.avif");
+            --page-bg: url("assets/images/bg.desktop.44c41736.avif");
+            --page-bg-mobile: url("assets/images/bg.mobile.88632f62.avif");
             --site-language-alignment: left;
             --site-language-direction: ltr;
             --site-language-flex-alignment: flex-start;
@@ -631,11 +632,18 @@
             font-size: 1.05rem;
         }
 
-        .image-component.style-4>.frame>img:first-child {
+        .image-component.style-4 > .frame picture,
+        #image01 .frame picture {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .image-component.style-4 > .frame img:first-child {
             border-radius: calc(1.25rem - 1px) !important;
         }
 
-        .image-component.style-4>.frame>img {
+        .image-component.style-4 > .frame img,
+        #image01 .frame img {
             -webkit-touch-callout: none;
             user-select: none;
             transition: none;
@@ -874,6 +882,9 @@
         }
 
         @media (max-width: 736px) {
+            body::before {
+                background-image: linear-gradient(360deg, rgba(35, 33, 41, 0.60) 0%, rgba(29, 27, 36, 0.52) 100%), var(--page-bg-mobile);
+            }
             html {
                 font-size: 9pt;
             }
@@ -1137,6 +1148,11 @@ if (song.background && song.background.file) {
   document.documentElement.style.setProperty(
     "--page-bg",
     "url('" + song.background.file + "')"
+  );
+  var mobileBg = song.background.file_mobile || song.background.file;
+  document.documentElement.style.setProperty(
+    "--page-bg-mobile",
+    "url('" + mobileBg + "')"
   );
 }
 
