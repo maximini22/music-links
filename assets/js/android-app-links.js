@@ -45,11 +45,19 @@
   ];
 
   function packageFor(url) {
-    var host;
+    var u;
     try {
-      host = new URL(url, location.href).hostname;
+      u = new URL(url, location.href);
     } catch (e) {
       return undefined;
+    }
+    var host = u.hostname;
+    // YouTube Music album lists use OLAK ids even on the regular host.
+    if (
+      /^(?:www\.|m\.)?youtube\.com$/i.test(host) &&
+      /^OLAK/.test(u.searchParams.get("list") || "")
+    ) {
+      return "com.google.android.apps.youtube.music";
     }
     for (var i = 0; i < RULES.length; i++) {
       if (RULES[i].host.test(host)) return RULES[i].package;
