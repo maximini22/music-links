@@ -1,12 +1,22 @@
 /*!
- * Android-only: rewrite outbound platform https links to open the native
- * app when installed, with browser fallback. Desktop and iOS are untouched.
- * Keep links.json URLs as plain https — this runs at click time.
+ * Android-only: prefer verified App Links (leave https) for hosts that
+ * already open their apps. Intent rewrite only for packages that need it,
+ * and only in Chrome — never navigate the tab to a bare intent:// URL that
+ * can render as an empty 404 when the scheme is not intercepted.
+ * Desktop and iOS are untouched. Keep links.json URLs as plain https.
  */
 (function () {
   if (!/Android/i.test(navigator.userAgent || "")) return;
 
-  // Host matchers → Android package. null = App Link only (leave https).
+  var ua = navigator.userAgent || "";
+  // Chrome Android only for intent:// (not Firefox, Samsung Internet, Edge, Opera, WebViews).
+  var canIntent =
+    /Chrome\//i.test(ua) &&
+    !/(EdgA|OPR|SamsungBrowser|Firefox|CriOS|; wv\)|WebView)/i.test(ua);
+
+  // Host matchers → Android package.
+  // null = App Link only (leave https — OS / browser opens the app or web).
+  // YouTube hosts map to the YouTube app only (never the Music app).
   var RULES = [
     {
       host: /^(?:www\.)?youtu\.be$/i,
@@ -17,10 +27,6 @@
       package: "com.google.android.youtube",
     },
     {
-      host: /^music\.youtube\.com$/i,
-      package: "com.google.android.apps.youtube.music",
-    },
-    {
       host: /^(?:open\.)?spotify\.com$/i,
       package: "com.spotify.music",
     },
@@ -29,7 +35,6 @@
       package: "com.apple.android.music",
     },
     {
-      // artist.bandcamp.com or bandcamp.com
       host: /(?:^|\.)bandcamp\.com$/i,
       package: "com.bandcamp.android",
     },
@@ -38,7 +43,6 @@
       package: "com.soundcloud.android.main",
     },
     {
-      // Rumble registers App Links — no intent:// rewrite.
       host: /(?:^|\.)rumble\.com$/i,
       package: null,
     },
@@ -52,13 +56,6 @@
       return undefined;
     }
     var host = u.hostname;
-    // YouTube Music album lists use OLAK ids even on the regular host.
-    if (
-      /^(?:www\.|m\.)?youtube\.com$/i.test(host) &&
-      /^OLAK/.test(u.searchParams.get("list") || "")
-    ) {
-      return "com.google.android.apps.youtube.music";
-    }
     for (var i = 0; i < RULES.length; i++) {
       if (RULES[i].host.test(host)) return RULES[i].package;
     }
@@ -92,8 +89,51 @@
       return false;
     }
     if (abs.protocol !== "http:" && abs.protocol !== "https:") return false;
-    // Only same-tab / outbound platform links we know about.
     return packageFor(abs.href) !== undefined;
+  }
+
+  function openWithIntent(httpsUrl, pkg) {
+    // Never assign intent:// when the browser may not intercept it — that is
+    // the empty 404 with "intent://…" in the address bar.
+    if (!canIntent) {
+      window.location.href = httpsUrl;
+      return;
+    }
+    var intentUrl = toIntentUrl(httpsUrl, pkg);
+    var left = false;
+    var done = false;
+    function markLeft() {
+      left = true;
+    }
+    function cleanup() {
+      document.removeEventListener("visibilitychange", onVis);
+      window.removeEventListener("pagehide", markLeft);
+      window.removeEventListener("blur", markLeft);
+    }
+    function onVis() {
+      if (document.hidden) markLeft();
+    }
+    document.addEventListener("visibilitychange", onVis);
+    window.addEventListener("pagehide", markLeft);
+    window.addEventListener("blur", markLeft);
+
+    // Use a temporary anchor click (Chrome Intent path) instead of a raw
+    // location assign when possible; still fall back to https if we stay put.
+    var a = document.createElement("a");
+    a.setAttribute("href", intentUrl);
+    a.style.display = "none";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+
+    setTimeout(function () {
+      if (done) return;
+      done = true;
+      cleanup();
+      if (!left && !document.hidden) {
+        window.location.replace(httpsUrl);
+      }
+    }, 700);
   }
 
   document.addEventListener(
@@ -108,13 +148,12 @@
       var href = new URL(node.getAttribute("href"), location.href).href;
       var pkg = packageFor(href);
 
-      // Rumble (and any future App-Link-only rule): leave https alone.
+      // App-Link-only hosts (Rumble): leave https alone.
       if (pkg === null) return;
 
       event.preventDefault();
       event.stopPropagation();
-      // Same-window navigation so Chrome honors intent:// + fallback.
-      window.location.href = toIntentUrl(href, pkg);
+      openWithIntent(href, pkg);
     },
     true
   );

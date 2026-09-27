@@ -1,43 +1,46 @@
 {
   "rel_freedom": {
     "name": "Freedom",
-    "title": "",
-    "description": "",
-    "keywords": "",
+    "title": "Freedom - ROBBIE P",
+    "description": "Stream Freedom by ROBBIE P now on Spotify, Apple Music, Youtube and more.",
+    "keywords": "Freedom, Robbie P, single",
     "favicon": "",
     "cover": {
       "title": "",
-      "file": ""
+      "file": "",
+      "file_mobile": "",
+      "alt": "Freedom by ROBBIE P — official cover"
     },
     "background": {
-      "file": ""
+      "file": "",
+      "file_mobile": ""
     },
     "share_image": "",
     "links": [
       {
-        "label": "Platform",
+        "label": "Spotify",
+        "url": "#",
+        "icon": "spotify"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/@robbiep",
+        "icon": "youtube"
+      },
+      {
+        "label": "Apple Music",
         "url": "#",
         "icon": "applemusic"
       },
       {
-        "label": "Platform",
+        "label": "Amazon Music",
         "url": "#",
-        "icon": "applemusic"
+        "icon": "amazonmusic"
       },
       {
-        "label": "Platform",
+        "label": "Deezer",
         "url": "#",
-        "icon": "applemusic"
-      },
-      {
-        "label": "Platform",
-        "url": "#",
-        "icon": "applemusic"
-      },
-      {
-        "label": "Platform",
-        "url": "#",
-        "icon": "applemusic"
+        "icon": "deezer"
       }
     ]
   }
