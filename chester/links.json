@@ -15,7 +15,7 @@
     "share_image": "assets/images/bg.jpg",
     "links": [
       {
-        "label": "Music Video (YouTube)",
+        "label": "YouTube",
         "url": "https://youtu.be/LjtBeYAyRPg",
         "icon": "youtube"
       },
