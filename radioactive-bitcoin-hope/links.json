@@ -1,0 +1,47 @@
+{
+  "rel_radioactive-bitcoin-hope": {
+    "name": "Radioactive Bitcoin Hope",
+    "title": "Radioactive Bitcoin Hope - ROBBIE P",
+    "description": "Stream Radioactive Bitcoin Hope by ROBBIE P now on Spotify, Apple Music, Youtube and more.",
+    "keywords": "Radioactive Bitcoin Hope, Robbie P, single",
+    "favicon": "",
+    "cover": {
+      "title": "Radioactive Bitcoin Hope - ROBBIE P",
+      "file": "assets/images/image01.jpg",
+      "file_mobile": "assets/images/image01.jpg",
+      "alt": "Radioactive Bitcoin Hope by ROBBIE P \u2014 official cover"
+    },
+    "background": {
+      "file": "assets/images/bg.jpg",
+      "file_mobile": "assets/images/bg.jpg"
+    },
+    "share_image": "assets/images/image01.jpg",
+    "links": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/album/0MO2AaFmjleM3JZTWtzY8H",
+        "icon": "spotify"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/watch?v=sTJJ78Iotf0",
+        "icon": "youtube"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/us/album/radioactive-bitcoin-hope-feat-the-character/1859956256",
+        "icon": "applemusic"
+      },
+      {
+        "label": "Amazon Music",
+        "url": "https://music.amazon.com.au/albums/B0G5YZ3Y9W",
+        "icon": "amazonmusic"
+      },
+      {
+        "label": "Bandcamp",
+        "url": "https://robbiep808x.bandcamp.com/album/radioactive-bitcoin-hope",
+        "icon": "bandcamp"
+      }
+    ]
+  }
+}
