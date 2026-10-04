@@ -16,15 +16,16 @@
 
   // Host matchers → Android package.
   // null = App Link only (leave https — OS / browser opens the app or web).
-  // YouTube hosts map to the YouTube app only (never the Music app).
+  // YouTube must never map to the Music app / music.youtube.com.
+  // youtube.com + youtu.be are verified App Links (package: null, like Rumble).
   var RULES = [
     {
       host: /^(?:www\.)?youtu\.be$/i,
-      package: "com.google.android.youtube",
+      package: null,
     },
     {
       host: /^(?:www\.|m\.)?youtube\.com$/i,
-      package: "com.google.android.youtube",
+      package: null,
     },
     {
       host: /^(?:open\.)?spotify\.com$/i,
@@ -148,7 +149,7 @@
       var href = new URL(node.getAttribute("href"), location.href).href;
       var pkg = packageFor(href);
 
-      // App-Link-only hosts (Rumble): leave https alone.
+      // App-Link-only hosts (YouTube, Rumble): leave https alone.
       if (pkg === null) return;
 
       event.preventDefault();

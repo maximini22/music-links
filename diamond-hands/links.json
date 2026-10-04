@@ -1,0 +1,47 @@
+{
+  "rel_diamond-hands": {
+    "name": "Diamond Hands and Laser Eyes",
+    "title": "Diamond Hands and Laser Eyes - ROBBIE P",
+    "description": "Stream Diamond Hands and Laser Eyes by ROBBIE P now on Spotify, Apple Music, Youtube and more.",
+    "keywords": "Diamond Hands and Laser Eyes, Diamond Hands, Robbie P, single",
+    "favicon": "",
+    "cover": {
+      "title": "Diamond Hands and Laser Eyes - ROBBIE P",
+      "file": "assets/images/image01.jpg",
+      "file_mobile": "assets/images/image01.jpg",
+      "alt": "Diamond Hands and Laser Eyes by ROBBIE P \u2014 official cover"
+    },
+    "background": {
+      "file": "assets/images/bg.jpg",
+      "file_mobile": "assets/images/bg.jpg"
+    },
+    "share_image": "assets/images/image01.jpg",
+    "links": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/album/4EdAN0Doin63Hg5iTkVhmD",
+        "icon": "spotify"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://youtu.be/wBL_8Ofd6Ys",
+        "icon": "youtube"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/us/album/diamond-hands-laser-eyes-single/1860017991",
+        "icon": "applemusic"
+      },
+      {
+        "label": "Amazon Music",
+        "url": "https://music.amazon.com.au/albums/B0G61BR61K",
+        "icon": "amazonmusic"
+      },
+      {
+        "label": "Bandcamp",
+        "url": "https://robbiep808x.bandcamp.com/album/diamond-hands-laser-eyes",
+        "icon": "bandcamp"
+      }
+    ]
+  }
+}
