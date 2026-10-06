@@ -1,0 +1,80 @@
+{
+  "rel_dread-pirate-robbie": {
+    "name": "Dread Pirate Robbie",
+    "title": "Dread Pirate Robbie - ROBBIE P",
+    "description": "Dread Pirate Robbie is a front-to-back album experience that moves between satire, signal, and speculation. Stream the album.",
+    "keywords": "Dread Pirate Robbie, Robbie P, album, Jeremy Legal Records",
+    "favicon": "",
+    "cover": {
+      "title": "Dread Pirate Robbie - ROBBIE P",
+      "file": "assets/images/image01.jpg",
+      "file_mobile": "assets/images/image01.jpg",
+      "alt": "Dread Pirate Robbie by ROBBIE P — official cover"
+    },
+    "background": {
+      "file": "assets/images/bg.jpg",
+      "file_mobile": "assets/images/bg.jpg"
+    },
+    "share_image": "assets/images/image01.jpg",
+    "links": [
+      {
+        "label": "SoundCloud",
+        "url": "https://soundcloud.com/robbiep808x/sets/dread-pirate-robbie",
+        "icon": "soundcloud"
+      },
+      {
+        "label": "Rumble",
+        "url": "https://rumble.com/v74ghks--full-album.html#comment-602189142",
+        "icon": "rumble"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/playlist?list=PLz-0_5QIjz-9kdDT0bmh0YhOIkAG92Bd8&si=rJZado4RpG_tbdQI",
+        "icon": "youtube"
+      },
+      {
+        "label": "Wavlake",
+        "url": "https://wavlake.com/album/049cf7ef-6074-43e4-be7a-b4aac98aa6c7",
+        "icon": "wavlake"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/us/album/dread-pirate-robbie/1870064952?ls",
+        "icon": "applemusic"
+      },
+      {
+        "label": "Tidal",
+        "url": "https://tidal.com/artist/5118858",
+        "icon": "tidal"
+      },
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/album/01mIow264j4s7H4sNDfPPr?si=iiZHM2hbSfWvjhTofTjZHA",
+        "icon": "spotify"
+      },
+      {
+        "label": "Amazon",
+        "url": "https://music.amazon.com.au/albums/B0GHKP4DS4?marketplaceId=A39IBJ37TRP1C6&musicTerritory=AU&ref=dm_sh_Veb9pFSInMctwuV4PAMFfcjnu",
+        "icon": "amazon"
+      }
+    ],
+    "socials": [
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/accounts/login/"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/@robbiep"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/robbiep808x"
+      },
+      {
+        "label": "Jeremy Legal Records",
+        "url": "https://jeremylegalrecords.com/"
+      }
+    ]
+  }
+}
