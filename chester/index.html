@@ -1092,7 +1092,7 @@
 
 var cover = document.querySelector("#image01 img");
 if (cover && song.cover) {
-  // Keep deferred data-src in sync so Carrd never reloads the old HTTrack filename.
+  // Keep deferred data-src in sync so Carrd never reloads the old saved-copy filename.
   cover.dataset.src = song.cover.file;
   cover.src = song.cover.file;
   cover.title = song.cover.title || song.title;

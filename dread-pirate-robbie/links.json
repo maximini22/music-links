@@ -19,17 +19,17 @@
     "links": [
       {
         "label": "Spotify",
-        "url": "https://open.spotify.com/album/01mIow264j4s7H4sNDfPPr",
+        "url": "",
         "icon": "spotify"
       },
       {
         "label": "YouTube",
-        "url": "https://www.youtube.com/playlist?list=PLz-0_5QIjz-9kdDT0bmh0YhOIkAG92Bd8&si=rJZado4RpG_tbdQI",
+        "url": "https://www.youtube.com/playlist?list=PLz-0_5QIjz-9kdDT0bmh0YhOIkAG92Bd8",
         "icon": "youtube"
       },
       {
         "label": "Amazon",
-        "url": "https://music.amazon.com.au/albums/B0GHKP4DS4?marketplaceId=A39IBJ37TRP1C6&musicTerritory=AU&ref=dm_sh_Veb9pFSInMctwuV4PAMFfcjnu",
+        "url": "https://music.amazon.com.au/albums/B0GHKP4DS4",
         "icon": "amazon"
       },
       {

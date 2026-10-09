@@ -1154,7 +1154,7 @@ if (heading) {
           ? '<i class="si ' + iconClass + '" aria-hidden="true"></i>'
           : "";
         li.innerHTML =
-          '<a href="' + link.url + '" class="n' + n + '" role="button" target="_blank" rel="noopener">' +
+          '<a ' + (link.url ? 'href="' + link.url + '" target="_blank" rel="noopener" ' : 'aria-disabled="true" ') + 'class="n' + n + '" role="button">' +
           icon +
           '<span class="label">' + link.label + "</span></a>";
         list.appendChild(li);
