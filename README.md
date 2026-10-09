@@ -1,2 +1,1 @@
-# music-links
-Static music landing pages
+Static song pages for links.robbiep.net. Label hosting.
