@@ -15,4 +15,4 @@
 2026-09-26  going-cashless  cover resize fix (even-square+picture CSS)
 2026-09-26  8 singles (+ next-single)  BG aspect-preserve regen (no 8:3 crop) + page-bg-mobile  e9869eb
 
-- 20260927T092842Z: YouTube slots → @robbiep (Chester → youtu.be/LjtBeYAyRPg); AAL YouTube app intent only (no Music package).
+- 20260927T092842Z: YouTube slots → the YouTube channel (Chester → youtu.be/LjtBeYAyRPg); AAL YouTube app intent only (no Music package).

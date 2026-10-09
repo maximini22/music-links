@@ -1,1 +1,1 @@
-Static song pages for links.robbiep.net. Label hosting.
+Static song pages for links.robbiep.net.
