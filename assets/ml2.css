@@ -1,0 +1,79 @@
+/* music-links home mockups (link tree / discography tree / search) */
+.home{max-width:640px;margin:0 auto;padding:56px 20px 64px}
+.home .top{text-align:center;margin-bottom:34px}
+.home .top img{width:150px;margin:0 auto 18px}
+.home h1.display{font-size:clamp(1.7rem,7vw,2.4rem);letter-spacing:.04em;text-transform:uppercase}
+.home .top p{margin:10px auto 0;max-width:28rem;font-size:.95rem}
+.home .top .btns{justify-content:center;margin-top:18px}
+/* sections */
+details.sec{border-top:1px solid rgba(230,203,179,.16)}
+details.sec:last-of-type{border-bottom:1px solid rgba(230,203,179,.16)}
+details.sec>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:14px;min-height:64px;padding:8px 4px}
+details.sec>summary::-webkit-details-marker{display:none}
+details.sec>summary h2{font:500 1.02rem/1.2 'Orbitron',sans-serif;letter-spacing:.06em;text-transform:uppercase;margin:0;color:var(--gold-l);flex:1}
+details.sec>summary .n{font:400 .72rem/1 'Inter';letter-spacing:.15rem;color:var(--dim)}
+details.sec>summary .chev{width:28px;height:28px;display:grid;place-items:center;border:1px solid rgba(230,203,179,.3);color:var(--gold-l);font:400 1rem/1 'Inter';transition:transform .2s}
+details.sec[open]>summary .chev{transform:rotate(45deg)}
+details.sec .body{padding:2px 0 22px;display:grid;gap:10px}
+.sec-note{font-size:.82rem;color:var(--dim);margin:0 4px 4px}
+.sec-note a{color:var(--gold-l)}
+/* rows */
+.item{background:rgba(23,21,28,.72);border:1px solid rgba(230,203,179,.10)}
+.item .row{display:flex;align-items:center;gap:14px;min-height:68px;padding:12px 16px;color:var(--text)}
+.item .row:hover{background:rgba(184,156,130,.08)}
+.item .row .t{flex:1;min-width:0}
+.item .row b{display:block;font:600 1.02rem/1.3 'Inter';color:#fff}
+.item .row small{display:block;margin-top:3px;font:400 .68rem/1.4 'Inter';letter-spacing:.14rem;text-transform:uppercase;color:var(--gold)}
+.item .row .go{color:var(--gold-l);font-size:1.1rem}
+.item.feat{border-color:rgba(230,203,179,.38);background:linear-gradient(215deg,rgba(230,203,179,.16),rgba(23,21,28,.8))}
+.chips{display:flex;flex-wrap:wrap;gap:6px;padding:0 16px 14px}
+.chip{display:inline-flex;align-items:center;gap:6px;min-height:32px;padding:0 11px;font:400 .7rem/1 'Inter';letter-spacing:.08rem;text-transform:uppercase;color:var(--gold-l);border:1px solid rgba(230,203,179,.24);background:rgba(255,255,255,.02)}
+.chip:hover{border-color:var(--gold);color:#fff}
+.chip.site{color:var(--gold-ink);border-color:transparent;background:var(--gold) linear-gradient(215deg,#E6CBB3 0%,rgba(184,156,130,.012) 100%)}
+.chip.warn{border-style:dashed;border-color:#d9a35a;color:#f0c58a}
+.chip.warn::before{content:'!';display:grid;place-items:center;width:14px;height:14px;background:#d9a35a;color:#17151C;font-weight:700;font-size:.62rem}
+.flag{display:inline-block;margin-left:8px;padding:3px 7px;font:600 .58rem/1 'Inter';letter-spacing:.12rem;text-transform:uppercase;color:#17151C;background:#d9a35a;vertical-align:2px}
+.legend{margin-top:28px;font-size:.78rem;color:var(--dim);line-height:1.6}
+.legend .chip{pointer-events:none;min-height:24px}
+.foot{margin-top:26px;text-align:center;color:var(--dim);font-size:.7rem;letter-spacing:.175rem;text-transform:uppercase}
+.foot a{color:var(--gold)}
+/* B: discography tree */
+.tree .era{border-left:1px solid rgba(230,203,179,.28);margin-left:10px;padding-left:18px;position:relative}
+.tree details.sec>summary{padding-left:0}
+.tree details.sec>summary::before{content:'';position:absolute;left:-6px;width:11px;height:11px;background:var(--gold);transform:rotate(45deg)}
+.tree details.sec{position:relative;border:0}
+.tree .era-sub{font-size:.8rem;color:var(--dim);margin:-6px 0 10px}
+details.rx{background:rgba(23,21,28,.72);border:1px solid rgba(230,203,179,.10)}
+details.rx>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:14px;min-height:64px;padding:10px 16px}
+details.rx>summary::-webkit-details-marker{display:none}
+details.rx>summary .t{flex:1}
+details.rx>summary b{display:block;font:600 1rem/1.3 'Inter';color:#fff}
+details.rx>summary small{display:block;margin-top:3px;font:400 .66rem/1.4 'Inter';letter-spacing:.14rem;text-transform:uppercase;color:var(--gold)}
+details.rx>summary .chev{color:var(--gold-l);font-size:1rem;transition:transform .2s}
+details.rx[open]>summary .chev{transform:rotate(90deg)}
+details.rx[open]{border-color:rgba(230,203,179,.35)}
+.rx .inner{padding:0 16px 16px}
+ol.tl{list-style:none;counter-reset:t;margin:0 0 14px;padding:0;border-top:1px solid rgba(230,203,179,.12)}
+ol.tl li{counter-increment:t;display:flex;align-items:center;gap:12px;min-height:44px;border-bottom:1px solid rgba(230,203,179,.08);font-size:.92rem;color:var(--muted)}
+ol.tl li::before{content:counter(t,decimal-leading-zero);font:500 .7rem/1 'Orbitron';color:var(--gold);width:22px}
+ol.tl li a{color:#fff}
+ol.tl li a::after{content:' →';color:var(--gold-l)}
+.rx .chips{padding:0}
+.rx .open-page{margin-top:14px;font-size:.74rem}
+/* C: search */
+.search{position:sticky;top:0;z-index:3;padding:14px 0 12px;background:linear-gradient(180deg,var(--bg) 78%,rgba(29,27,36,0))}
+.search input{width:100%;height:3.2rem;padding:0 16px;background:var(--bg3);border:1px solid rgba(230,203,179,.35);color:#fff;font:300 1rem 'Inter';outline:none}
+.search input:focus{border-color:var(--gold-l)}
+.filters{display:flex;gap:6px;overflow-x:auto;padding-top:10px;scrollbar-width:none}
+.filters button{flex:none;min-height:36px;padding:0 14px;background:none;border:1px solid rgba(230,203,179,.26);color:var(--gold-l);font:400 .7rem/1 'Inter';letter-spacing:.12rem;text-transform:uppercase;cursor:pointer}
+.filters button.on{background:var(--gold) linear-gradient(215deg,#E6CBB3 0%,rgba(184,156,130,.012) 100%);color:var(--gold-ink);border-color:transparent}
+.count{font-size:.75rem;color:var(--dim);letter-spacing:.12rem;text-transform:uppercase;margin:6px 2px 10px}
+.list{display:grid;gap:10px}
+.empty{color:var(--dim);text-align:center;padding:30px 0}
+@media (min-width:980px){.home{max-width:760px;padding-top:72px}}
+details.sec[open]>summary .chev{transform:none}
+details.sec>summary .chev{font-size:0}
+details.sec>summary .chev::after{content:'+';font-size:1.05rem}
+details.sec[open]>summary .chev::after{content:'–'}
+.tree details.sec>summary::before{left:-24px}
+details:not([open])>.inner,details:not([open])>.body{display:none}
